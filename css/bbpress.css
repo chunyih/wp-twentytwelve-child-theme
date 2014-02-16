@@ -1,0 +1,126 @@
+
+@import url("../../../plugins/bbpress/templates/default/css/bbpress.min.css");
+
+/*========================================
+	Hide
+==========================================*/
+div.bbp-template-notice, div.indicator-hint {display: none;} /* hide editor notic */
+div.bbp-template-notice.info 	{display: none;} /* hide forum notice */
+div.bbp-breadcrumb 				{display: none;} /* hide breadcrumb --------------------*/
+div.bbp-pagination-count 		{display: none;} /* hide topic count -------------------*/
+/*#bbpress-forums div.bbp-reply-author .bbp-author-role {display: none;} *//* hide author role */
+div.bbp-reply-ip {display: none;} /* hide author ip */
+div.bbp-author-role {display: none;} /* hide author role */
+
+.bbp-reply-revision-log {display: none;} /* hide reply revision log */
+/*.bbp-admin-links {display: none;}*/ /* hide admin links bar */
+.bbp-reply-permalink {display: none;} /* hide post number */
+
+span.bbp-topic-started-by, span.bbp-topic-started-in {display: block;} /* hide forum topic "Started by:" */
+span.bbp-topic-freshness-author {display: block;} /* hide forum topic freshness author */
+
+#bbpress-forums p.bbp-topic-meta img.avatar, /* small avatar tweek */
+#bbpress-forums ul.bbp-reply-revision-log img.avatar, 
+#bbpress-forums ul.bbp-topic-revision-log img.avatar, 
+#bbpress-forums div.bbp-template-notice img.avatar, 
+#bbpress-forums .widget_display_topics img.avatar, 
+#bbpress-forums .widget_display_replies img.avatar {margin-bottom: 0; border: none;}
+
+fieldset.bbp-form textarea 						{min-height: 70px !important; resize: vertical !important;}
+fieldset.bbp-form textarea:focus,
+fieldset.bbp-form input:focus 					{outline-color: none !important;
+								 				 background: white !important;
+								 				 -webkit-box-shadow: none !important;
+								    			    -moz-box-shadow: none !important;
+								         			     box-shadow: none !important;} /*0 0 5px rgb(77, 144, 254)*/
+
+/*========================================
+	Buttons
+==========================================*/
+.button {
+	box-shadow: none !important;
+	border-radius: 2px !important;
+	border: 1px solid transparent !important;
+	text-transform: uppercase !important;
+	height: 34px !important;
+	padding-top: 7px !important;
+	padding-bottom: 7px !important; 
+}
+/*a.button.addForumTopic {
+	color: #fff;
+	margin-top: 10px;
+	cursor: pointer;
+	min-width: 110px;
+	text-transform: uppercase;
+	background: #d14836;
+	background-image: -webkit-linear-gradient(top, #dd4b39, #d14836);
+	   background-image: -moz-linear-gradient(top, #dd4b39, #d14836);
+	    background-image: -ms-linear-gradient(top, #dd4b39, #d14836);
+	     background-image: -o-linear-gradient(top, #dd4b39, #d14836);
+	        background-image: linear-gradient(top, #dd4b39, #d14836);
+
+}
+a.button.addForumTopic:hover {
+	border: 1px solid #b0281a;
+	border-bottom: 1px solid #af301f;
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+		    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	background-image: -webkit-linear-gradient(top, #dd4b39, #c53727);
+	   background-image: -moz-linear-gradient(top, #dd4b39, #c53727);
+	    background-image: -ms-linear-gradient(top, #dd4b39, #c53727);
+	     background-image: -o-linear-gradient(top, #dd4b39, #c53727);
+	        background-image: linear-gradient(top, #dd4b39, #c53727);
+}*/
+
+/*========================================
+	Inputs, Textarea
+==========================================*/
+input, textarea {
+	font-size: 0.85rem !important;
+	color: rgba(0, 0, 0, 0.95) !important;
+	-webkit-transition: -webkit-box-shadow 0.45s, border-color 0.45s ease-in-out, height 0.15s !important;
+	      -moz-transition: -moz-box-shadow 0.45s, border-color 0.45s ease-in-out, height 0.15s !important;
+		            transition: box-shadow 0.45s, border-color 0.45s ease-in-out, height 0.15s !important;
+}
+
+/*========================================
+	Forum General
+==========================================*/
+#bbpress-forums ul.bbp-topics,
+#bbpress-forums ul.bbp-forums 							{font-size: 14px;
+														 text-shadow: 0 1px 0 rgba(255, 255, 255, 1), 0 0 0 rgba(255, 255, 255, 0);} /* Forum title, topic title. fd overwrite. */
+li.bbp-body ul, div#bbpress-forums                      {text-shadow: 0 1px 0 rgba(255, 255, 255, 1), 0 0 0 rgba(255, 255, 255, 0);}														 
+div#bbpress-forums a:hover 								{text-decoration: underline;} /* all links underline */
+
+a.bbp-author-name,
+li.bbp-topic-freshness a, li.bbp-forum-freshness a  	{color: rgb(68, 68, 68);} /* change other links to black */
+a.bbp-author-name:hover,
+li.bbp-topic-freshness a:hover, li.bbp-forum-freshness a:hover {color: #2795b6;} /* link hover blue */
+
+span#subscription-toggle                                {float: right;}
+
+li.bbp-topic-title, li.bbp-forum-info					{font-weight: bold; word-break: break-all; padding-left: 4px;} /* Forum topic title */
+span.bbp-topic-pagination a.page-numbers:hover 			{background: #eee; opacity: .8;} /* topic pagination */
+.bbp-pagination-links a,
+.bbp-pagination-links span.page-numbers					{padding: 1px 5px;} /* pagination box */
+.bbp-pagination-links a.next.page-numbers,
+.bbp-pagination-links a.prev.page-numbers				{padding: 0 5px 1px 5px; height: 16px;}
+
+fieldset.bbp-form 										{border: 1px solid #E2E2E2 !important; font-size: 0.9rem !important; border-radius: 3px;} /* Form. border of "Create New Topic" box, form title size  */
+ul.bbp-replies div.bbp-reply-form form#new-post         {margin: 0 5px 1em 5px;} /* Form, in the reply  */
+
+a#bbp-cancel-reply-to-link 								{margin-right: 20px;} /* cancel link */
+
+#bbpress-forums li.bbp-header .bbp-reply-author,
+#bbpress-forums li.bbp-footer .bbp-reply-author  		{width: 95px !important;} /* correct "Author" width */
+#bbpress-forums li.bbp-header .bbp-reply-content,        
+#bbpress-forums li.bbp-footer .bbp-reply-content  		{margin-left: 121px !important;} /* correct "Post" title margin */
+
+/*========================================
+	Forum Each Topic
+==========================================*/
+div.bbp-reply-header 									{padding: 5px 8px;}
+div.topic div.bbp-reply-author,
+div.reply div.bbp-reply-author   						{height: 115px;}
+div.topic div.bbp-reply-content 						{min-height: 105px;}
