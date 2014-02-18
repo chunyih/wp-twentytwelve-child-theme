@@ -1,0 +1,2 @@
+Wordpress Twentytwelve Child Theme
+==================================
