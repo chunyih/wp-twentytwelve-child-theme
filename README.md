@@ -2,7 +2,7 @@ Wordpress Twentytwelve Child Theme
 ==================================
 #### A Clean Responsive Wordpress Theme
 
-Developed for Pan-Pacific Mechanical as a part of internal ERP-like system. Frontend is fully constructed with Foundation and using Wordpress APIs to interact with the database. Forum and membership features powered by bbPress/Buddypress.
+Developed for my company as a part of internal ERP-like system. Frontend is fully constructed with Foundation and using Wordpress APIs to interact with the database. Forum and membership features powered by bbPress/Buddypress.
 <br>
 <br>
 
